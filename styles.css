@@ -1,86 +1,61 @@
 body {
-    font-family: sans-serif;
-    background-color: rgb(155,199,171);
-    line-height: 1.4;
+    font-family: Verdana;
+    background-color:rgb(155,199,171);
 }
 
-table, th, td {
-    border: 3px, solid black;
-    border-collapse: collapse;
-}
-th, td {
-    background-color: ·96D4D4;
+#container {
+    width: 960px;
+    margin: auto;
 }
 
-.centered {
-    margin: 0 auto;
-    padding: 0 1em;
+h1 {
+    text-align: center;
+    font-family:Times,serif;
+    color:maroon;
 }
 
-@media screen and (min-width: 52em) {
-    .centered {
-        max-width: 52em;
-    }
+nav {
+    height:30px;
+    text-align:center;
+    
 }
 
-.masthead {
-    background: rgb(155,199,171);
-  	box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
-}
-/* .site-title { */
-/*     margin: 0 0 0.5em; */
-/*     padding: 1em 0; */
-/*     font-size: 2em; */
-/*     font-weight: 300; */
-/*     text-align: center; */
-/*     color: black; */
-/* } */
-@media screen and (min-width: 44.44em) {
-    .site-title {
-        font-size: 2em;
-    }
-}
-.site-title a {
-    color: rgb(155,199,171);
-    text-decoration: none;
-}
-.site-title a:hover {
-    text-decoration: underline;
-}
-.card a {
-	color: black;
-	text-decoration: none;
-}
-.card a:hover {
-	box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding-top: 5px;
 }
 
-/* Flexbox styles */
-@media screen and (min-width: 40em) {  
-  .cards {
-    margin-top: -1em;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
+nav li {
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
 
-  .card {
-    margin-bottom: 1em;
-    display: flex;
-    flex: 0 1 calc(50% - 0.5em);
-    /* width: calc(50% - 1em); */
-  }
-} /* mq 40em*/
+}
+aside {
+    width: 200px;
+    height: 350px;
+    border: 1px solid #10889E;
+    float: left;
+    margin-left: 30px;
+    padding: 5px;
+}
 
-@media screen and (min-width: 60em) {
-  .cards {
-    margin-top: inherit;
-  }
-  
-  .card {
-    margin-bottom: 2em;
-    display: flex;
-    flex: 0 1 calc(33% - 0.5em);
-    /* width: calc(33% - 1em); */
-  }
-} /* mq 60em*/
+#main {
+    width: 650px;
+    float: right;
+    margin-right: 30px;
+    line-height: 20px;
+}
+
+footer {
+    height: 50px;
+    background-color: lightgrey;
+    clear: both;
+}
+
+footer li {
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+}
